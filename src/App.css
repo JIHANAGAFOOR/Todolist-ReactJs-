@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+}
+#text2{
+  position: sticky;
+}
+#text1 {
+  height: 10vmin;
+  pointer-events: none;
+  border: 10px solid rgb(110, 224, 228);
+  border-radius: 50%;
+  width:200px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #text1{
+    animation: text1-spin infinite 5s linear;
+  }
+}
+
+@keyframes text1-spin{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body{
+  background-color: rgb(147, 156, 158);
+  padding: 20px;
+}
+#text2{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+  font-weight: 900;
+  text-align: center;
+}
